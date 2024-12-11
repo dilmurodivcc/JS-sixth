@@ -7,6 +7,11 @@ function Triangle() {
       Yuza: ${s.toFixed(2)}sm^2
   `;
 }
+
+
+
+
+
 function InvertDigit() {
   const a = +document.getElementById("numA").value;
   const b = +document.getElementById("numB").value;
@@ -18,6 +23,12 @@ function InvertDigit() {
     "output2"
   ).innerHTML = `Teskari raqamla: <br> a = ${reverse(a)}, b = ${reverse(b)}, c = ${reverse(c)}`;
 }
+
+
+
+
+
+
 function DigitCountSum() {
   const a = +document.getElementById("A").value;
   const b = +document.getElementById("B").value;
