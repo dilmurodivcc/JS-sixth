@@ -158,7 +158,7 @@ footer {
   backdrop-filter: blur(420px);
   background-color: var(--secondary-bg-color);
   z-index: 1000;
-  z-index: 1000;
+  position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .logo {

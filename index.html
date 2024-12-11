@@ -58,8 +58,12 @@
             perimetri va yuzini hisoblovchi dastur tuzilsin.
           </h2>
           <br />
-          <input id="inputValue" type="number" placeholder="N ni kiriting" />
-          <button class="button-85" role="button" onclick="m1()">
+          <input
+            id="inputValue"
+            type="number"
+            placeholder="Tominini kiriting (sm)"
+          />
+          <button class="button-85" role="button" onclick="Triangle()">
             Hisoblash
           </button>
           <div class="output" id="output"><p>Output</p></div>
@@ -77,7 +81,7 @@
       </section>
       <section id="second">
         <div id="content">
-          <h2>
+          <h2 class="limited-line">
             <span>FunSimple7. </span>Butun musbat sonning raqamlarini teskari
             tartibda chiqaruvchi InvertDigit nomli funksiyaga hosil qiling. Bu
             funksiya orqali a, b, c sonlarining raqamlari teskari tartibda
@@ -85,12 +89,24 @@
           </h2>
           <br />
           <input
-            id="inputValue2-1"
+            id="numA"
             class="first-input"
             type="number"
-            placeholder="Birinchi son"
+            placeholder="a soni"
           />
-          <button class="button-85" role="button" onclick="m2()">
+          <input
+            id="numB"
+            class="first-input"
+            type="number"
+            placeholder="b soni"
+          />
+          <input
+            id="numC"
+            class="first-input"
+            type="number"
+            placeholder="b soni"
+          />
+          <button class="button-85" role="button" onclick="InvertDigit()">
             Hisoblash
           </button>
           <div class="output" id="output2"><p>Output</p></div>
@@ -115,13 +131,18 @@
             yig’indisini hisoblovchi dastur tuzilsin.
           </h2>
           <br />
-          <input id="inputValue33" type="number" placeholder="x kiriting" />
 
-          <button class="button-85" role="button" onclick="m3()">
+          <input id="A" type="number" placeholder="A ni kiriting" />
+          <input id="B" type="number" placeholder="A ni kiriting" />
+          <input id="C" type="number" placeholder="A ni kiriting" />
+
+          <button class="button-85" role="button" onclick="DigitCountSum()">
             Hisoblash
           </button>
 
-          <div class="output" id="output3"><p>Output</p></div>
+          <div class="output" style="font-size: 16px" id="output3">
+            <p>Output</p>
+          </div>
         </div>
         <img
           class="code"
@@ -134,7 +155,7 @@
           alt=""
         />
       </section>
-      <section id="fourth">
+      <!-- <section id="fourth">
         <div id="content">
           <h2 class="limited-line">
             <span>FunSimple17. </span> Kvadrat tenglamaning ildizlar sonini
@@ -160,10 +181,10 @@
           src="./images/Screenshot_4.png"
           alt=""
         />
-      </section>
+      </section> -->
       <section id="fivth">
         <div id="content">
-          <h2>
+          <h2 class="limited-line">
             <span>FunSimple24.</span>
             Butun sonning juft-toqligini aniqlovchi Even(K) funksiyasini hosil
             qiling. Funksiya K juft son bo’lsa - true, aks holda false qiymat
@@ -171,7 +192,9 @@
             aniqlansin.
           </h2>
           <br />
-          <input id="inputValue5-1" type="number" placeholder="n" />
+          <input id="num1" type="number" placeholder="1 - son" />
+          <input id="num2" type="number" placeholder="2 - son" />
+          <input id="num3" type="number" placeholder="3 - son" />
 
           <button class="button-85" role="button" onclick="m5()">
             Hisoblash
@@ -191,7 +214,7 @@
       </section>
       <section id="sixth">
         <div id="content">
-          <h2>
+          <h2 class="limited-line">
             <span>FunSimple27.</span>
             IsPowerN(K, N) mantiqiy funksiyasini hosil qiling. (K > 0). Agar K
             soni N sonining biror darajasi bo’lsa – true, aks holda false qiymat
@@ -199,13 +222,25 @@
             ekanini aniqlovchi dastur tuzilsin.
           </h2>
           <br />
-          <input id="inputValue5-1" type="number" placeholder="n" />
 
-          <button class="button-85" role="button" onclick="m5()">
+          <input id="n" type="number" placeholder="N" />
+          <input id="k1" type="number" placeholder="1 - son" />
+          <input id="k2" type="number" placeholder="2 - son" />
+          <input id="k3" type="number" placeholder="3 - son" />
+          <input id="k4" type="number" placeholder="4 - son" />
+          <input id="k5" type="number" placeholder="5 - son" />
+
+          <button class="button-85" role="button" onclick="IsPowerN()">
             Hisoblash
           </button>
-          <div class="output" id="output5"><p>Output</p></div>
+
+          <!-- Natija ko'rsatiladigan joy -->
+          <div class="output" id="output6">
+            <p>Output</p>
+          </div>
         </div>
+
+        <!-- Rasm -->
         <img
           class="code"
           style="
@@ -213,26 +248,30 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           "
-          src="./images/Screenshot_5.png"
+          src="./images/Screenshot_6.png"
           alt=""
         />
       </section>
-      <section id="seventh" style="margin-bottom: 100px;">
+
+      <section id="seventh" style="margin-bottom: 100px">
         <div id="content">
-          <h2>
+          <h2 class="limited-line">
             <span>FunSimple51.</span>
-            IsPowerN(K, N) mantiqiy funksiyasini hosil qiling. (K > 0). Agar K
-            soni N sonining biror darajasi bo’lsa – true, aks holda false qiymat
-            qaytarsin. Shu funksiya orqali 5 ta sondan nech tasi N ning darajasi
-            ekanini aniqlovchi dastur tuzilsin.
+            IncTime(H, M, S, T) funksiyasini hosil qiling. Funksiya berilgan H –
+            soat, M – minut, S – sekundni, T sekundga oshirsin. Funksiya orqali
+            berilgan soat, minut va sekundni T sekundga oshiruvchi dastur
+            tuzilsin.
           </h2>
           <br />
-          <input id="inputValue5-1" type="number" placeholder="n" />
+          <input id="H" type="number" placeholder="H ni kiriting" />
+          <input id="M" type="number" placeholder="M ni kiriting" />
+          <input id="S" type="number" placeholder="S ni kiriting" />
+          <input id="T" type="number" placeholder="Qanch sekund o`shirilsin" />
 
-          <button class="button-85" role="button" onclick="m5()">
+          <button class="button-85" role="button" onclick="IncTime()">
             Hisoblash
           </button>
-          <div class="output" id="output5"><p>Output</p></div>
+          <div class="output" id="output7"><p>Output</p></div>
         </div>
         <img
           class="code"
@@ -241,12 +280,11 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           "
-          src="./images/Screenshot_5.png"
+          src="./images/Screenshot_7.png"
           alt=""
         />
       </section>
     </div>
-
     <footer>
       <div class="logo">
         <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
@@ -266,7 +304,6 @@
     <button id="backToTopBtn">
       <i><i class="fa-solid fa-arrow-up"></i></i>
     </button>
-
     <script src="app.js"></script>
   </body>
 </html>
